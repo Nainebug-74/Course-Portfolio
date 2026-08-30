@@ -1,0 +1,27 @@
+cssbody {
+  font-family: Arial, sans-serif;
+  background-color: #c0c0c0;
+  color: #121212;
+  margin: 5px;
+  padding: 20px;
+}
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #00bfff;
+  border: 2px solid #470202;
+}
+.card h1 {
+  color: #ff00ff;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.card p {
+  color: #ffbf00;
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
