@@ -89,19 +89,20 @@ button {
 }
 
 
-.button-03 {
-  background-color: #4f46e5;
-  color: #ffffff;
-  padding: 12px 24px;
-  border: 2px solid #4f46e5;
-  font-family: inherit;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
+.button-03 { 
+  background-color: #4f46e5; 
+  color: #ffffff; 
+  padding: 12px 24px; 
+  border: 2px solid #4f46e5; 
+  font-family: inherit; 
+  cursor: pointer; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+} 
 
-.button-03:hover {
-  background-color: transparent; 
-  border-color: #4f46e5; 
-  color: #4f46e5; 
+.button-03:hover { 
+  transform: translatex(10px); 
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); 
+  border-color: #000000;
 }
 
 
@@ -122,26 +123,50 @@ button {
   background-color: #10b981;
   color: #ffffff;
   padding: 12px 24px;
-  border: 2px solid #10b981;
+  border: 3px solid #032e5f;
   font-family: inherit;
+  cursor: pointer;
+  transform: scale(1); 
   transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
+
 .button-05:hover {
   transform: scale(1.1);
   background-color: #059669;
-  border-color: #105202;
+  border-color: #03634548; 
+  border-bottom-color: #000000; 
 }
 
-.button-06 {
-  background-color: #5603a39f;
-  color: #f5f1f1;
-  padding: 12px 24px;
-  border: 2px solid #4b06ebe7;
-  font-family: inherit;
-  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+.button-06 { 
+  position: relative;
+  background-color: #5603a39f; 
+  color: #f5f1f1; 
+  padding: 12px 24px; 
+  border: 2px solid transparent;
+  font-family: inherit; 
+  cursor: pointer;
+  overflow: hidden; 
+  transition: transform 0.4s ease, background-color 0.3s ease; 
+} 
+
+.button-06::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #4b06ebe7;
+  box-sizing: border-box;
+  transform: rotate(0deg) scale(0);
+  transition: transform 2s ease-in-out;
 }
-.button-06:hover {
-  transform: scale(1.2);
-  background-color: #33025c;
-  border-color: #41285e;
+
+.button-06:hover { 
+  transform: scale(1.1); 
+  background-color: #c408dd; 
+}
+
+.button-06:hover::before {
+  transform: rotate(180deg) scale(1);
 }
