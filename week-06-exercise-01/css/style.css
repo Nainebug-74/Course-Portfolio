@@ -157,6 +157,123 @@ code {
 
 .nav-custom a:hover {}
 
+.nav-mine {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  background-color: #333;         
+  padding: 15px 30px;
+  color: white;
+}
+.nav-mine ul {
+  list-style-type: none;         
+  margin: 0;
+  padding: 0;
+  display: flex;                  
+  gap: 20px;                     
+}
+.nav-mine a {
+  color: white;
+  text-decoration: none;         
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;    
+}
+.nav-center {
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0;
+}
+.nav-center a:hover {
+  color: #6d28d9; 
+}
+
+.nav-between {
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+.nav-between a:hover {
+  color: #6d28d9; 
+}
+
+.nav-bar { 
+  background-color: #f3e8ff; 
+  color: #581c87;           
+  padding: 0 24px; 
+} 
+
+.nav-bar a { 
+  display: inline-block;     
+  padding: 16px 20px; 
+  color: #581c87;           
+  text-decoration: none;   
+  transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+
+.nav-bar a:hover { 
+  background-color: #e9d5ff; 
+  color: #3b0764;            
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.nav-links {
+  display: flex;                 
+  gap: 12px;                      
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 10px 20px;             
+  background-color: #ffffff;      
+  color: #581c87;                 
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500;
+  border: 2px solid #581c87;      
+  border-radius: 6px;             
+  transition: all 0.2s ease;       
+}
+
+.nav-links a:hover {
+  background-color: #581c87;     
+  color: #ffffff;                 
+}
+.nav-links {
+  display: flex;                  
+  list-style: none;              
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  display: block;                 
+  padding: 16px 20px;
+  color: #581c87;                 
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #e9d5ff;     
+  color: #3b0764;                 
+}
+
 @media (width >=480px) {}
 
 @media (width >=1024px) {}
